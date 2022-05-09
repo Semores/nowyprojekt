@@ -1,0 +1,25 @@
+@mixin hero-style ($font-size){
+  font-size: $font-size;
+  color: #DDDDDD;
+}
+
+h2{
+  @include hero-style(25px);
+}
+
+.hero-id{
+  @include hero-style(20px)
+}
+
+.hero-name{
+  @include hero-style(20px)
+}
+
+input{
+  margin: 5px;
+  padding: 2px;
+  background-color: #EEEEEE;
+  border-color: #999999;
+  border-radius: 10px;
+  text-align: center;
+}
