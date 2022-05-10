@@ -16,3 +16,5 @@ import {FormsModule} from "@angular/forms";
   ]
 })
 export class HeroesModule { }
+
+// Show the HeroDetailComponent continue
