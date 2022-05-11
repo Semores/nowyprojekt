@@ -7,22 +7,22 @@ import { AppComponent } from './app.component';
 import { HeroesModule } from './core/components/heroes/heroes.module';
 import { FormsModule } from '@angular/forms';
 import { HeroDetailComponent } from './core/components/hero-detail/hero-detail.component';
+import { HeroDetailModule } from './core/components/hero-detail/hero-detail.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeroDetailComponent,
+    //    HeroDetailComponent,// <- to powinieneś dodać do HeroDetailModule
   ],
   imports: [
     BrowserModule,
-    FormsModule,
     AppRoutingModule,
-    HeroesModule
+    HeroesModule,
   ],
   providers: [],
-  exports: [
-    HeroDetailComponent
-  ],
-  bootstrap: [AppComponent]
+  // exports: [
+  //   HeroDetailComponent // <- to powinieneś dodać do HeroDetailModule
+  // ],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
