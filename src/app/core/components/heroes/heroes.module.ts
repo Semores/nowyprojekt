@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {HeroesComponent} from "./heroes.component";
 import {FormsModule} from "@angular/forms";
+import {AppModule} from "../../../app.module";
 
 
 
@@ -9,12 +10,11 @@ import {FormsModule} from "@angular/forms";
   declarations: [HeroesComponent],
   imports: [
     CommonModule,
-    FormsModule
+    FormsModule,
+    AppModule
   ],
   exports: [
     HeroesComponent
   ]
 })
 export class HeroesModule { }
-
-// Show the HeroDetailComponent continue
