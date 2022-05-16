@@ -5,13 +5,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { HeroesModule } from './core/components/heroes/heroes.module';
-import { FormsModule } from '@angular/forms';
-import { HeroDetailComponent } from './core/components/hero-detail/hero-detail.component';
-import { HeroDetailModule } from './core/components/hero-detail/hero-detail.module';
+import { MessagesComponent } from './core/components/messages/messages.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import {HeroesComponent} from "./core/components/heroes/heroes.component";
 
 @NgModule({
   declarations: [
     AppComponent,
+    MessagesComponent,
+    DashboardComponent,
+    HeroesComponent,
     //    HeroDetailComponent,// <- to powinieneś dodać do HeroDetailModule
   ],
   imports: [
