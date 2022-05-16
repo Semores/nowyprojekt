@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import {HeroesComponent} from "./heroes.component";
 import {FormsModule} from "@angular/forms";
 import {HeroDetailModule} from "../hero-detail/hero-detail.module";
+import {AppRoutingModule} from "../../../app-routing.module";
 
 
 
@@ -12,7 +13,7 @@ import {HeroDetailModule} from "../hero-detail/hero-detail.module";
     CommonModule,
     FormsModule,
     HeroDetailModule,
-    //   AppModule // <-importowanie  AppModule powoduje circular dependency
+    AppRoutingModule
   ],
   exports: [
     HeroesComponent
