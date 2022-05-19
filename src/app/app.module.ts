@@ -22,7 +22,10 @@ import {InMemoryDataService} from './in-memory-data.service';
     BrowserModule,
     AppRoutingModule,
     HeroesModule,
-    HttpClientModule
+    HttpClientModule,
+    HttpClientInMemoryWebApiModule.forRoot(
+      InMemoryDataService, {dataEncapsulation: false}
+    )
   ],
   providers: [],
   bootstrap: [AppComponent],
