@@ -38,4 +38,9 @@ export class HeroDetailComponent implements OnInit {
         .subscribe(() => this.goBack());
     }
   }
+
+  goBack(): void {
+        throw new Error('Method not implemented.');
+    }
+
 }
